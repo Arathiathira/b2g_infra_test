@@ -1,5 +1,11 @@
 /*
-data "terraform_remote_state" "vpc"{
+    terraform{
+        required_version = "2.13.0"
+        backend "azurerm"{
+            feature {}
+        }
+    }
+/*data "terraform_remote_state" "vpc"{
     backend = "remote"
     organisation = Practice_ars
     workspace = {
@@ -12,7 +18,7 @@ data "terraform_remote_state" "vpc"{
         }
     }
 }
-
+*/
 */
 
 provider "azurerm" {
